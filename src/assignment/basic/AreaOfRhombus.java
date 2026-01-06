@@ -11,6 +11,5 @@ public class AreaOfRhombus {
         int base = scanner.nextInt();
         double area = (double) (height * base) / 2;
         System.out.println("Area of Rhombus : " + area);
-
     }
 }
