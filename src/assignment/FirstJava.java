@@ -102,11 +102,53 @@ public class FirstJava {
                     }
                     System.out.println();
                 }
+                case 8 -> {
+                    System.out.print("Enter a String :: ");
+                    String name = scanner.next();
+                    int start = 0;
+                    int end = name.length() - 1;
+                    while (start <= end) {
+                        if (name.charAt(start) == name.charAt(end)) {
+                            start++;
+                            end--;
+                        } else {
+                            System.out.println("Given String is not palindrome");
+                            break;
+                        }
+                    }
+
+                    if (start == end || start > end) {
+                        System.out.println("String is palindrome");
+                    }
+                }
+                case 9 -> {
+                    System.out.print("Enter a Number : ");
+                    int number = scanner.nextInt();
+                    if (findArmStrongNumber(number)) {
+                        System.out.println("Number " + number + " is Armstrong Number");
+                    } else {
+                        System.out.println("Number " + number + " is not Armstrong Number");
+                    }
+                }
                 default -> System.out.println("Bye-Bye");
             }
 
 
         } while (answer != 0);
+    }
+
+    private static boolean findArmStrongNumber(int number) {
+        int originalNumber = number;
+
+        int sum = 0;
+        while (number > 0) {
+            int digit = number % 10;
+            number = number / 10;
+            sum = sum + (digit * digit * digit);
+
+        }
+
+        return originalNumber == sum;
     }
 
     private static double calculate(int first, int second, String ch) {
