@@ -82,7 +82,10 @@ public class FirstJava {
                     }
                 }
                 case 6 -> {
-
+                    System.out.print("Enter Inr");
+                    int inr = scanner.nextInt();
+                    double dollar = inr / 90f;
+                    System.out.println(inr + " Rs = $" + dollar);
                 }
                 default -> System.out.println("Bye-Bye");
             }
