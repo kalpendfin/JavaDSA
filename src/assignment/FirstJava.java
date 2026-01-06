@@ -87,6 +87,21 @@ public class FirstJava {
                     double dollar = inr / 90f;
                     System.out.println(inr + " Rs = $" + dollar);
                 }
+                case 7 -> {
+                    System.out.print("Enter Number : ");
+                    int steps = scanner.nextInt();
+                    int start = 0;
+                    int next = 1;
+                    System.out.println("Fibonacci Series:");
+                    System.out.print(start + "," + next + ",");
+                    for (int i = 0; i < steps - 2; i++) {
+                        int sum = start + next;
+                        start = next;
+                        next = sum;
+                        System.out.print(sum + ",");
+                    }
+                    System.out.println();
+                }
                 default -> System.out.println("Bye-Bye");
             }
 
