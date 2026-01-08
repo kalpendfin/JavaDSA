@@ -11,6 +11,5 @@ public class PerimeterOfParallelogram {
         int side = scanner.nextInt();
 
         System.out.println("Perimeter of Parallelogram : " + 2 * (base + side));
-
     }
 }
