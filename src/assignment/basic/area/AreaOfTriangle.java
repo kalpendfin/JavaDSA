@@ -1,8 +1,8 @@
-package assignment.basic;
+package assignment.basic.area;
 
 import java.util.Scanner;
 
-public class AreaOfIsoscelesTriangle {
+public class AreaOfTriangle {
     public static void main(String[] args) {
         System.out.print("Enter Height of Triangle : ");
         Scanner scanner = new Scanner(System.in);

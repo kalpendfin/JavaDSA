@@ -1,4 +1,4 @@
-package assignment.basic;
+package assignment.basic.area;
 
 import java.util.Scanner;
 

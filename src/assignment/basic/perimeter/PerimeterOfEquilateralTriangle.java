@@ -1,4 +1,4 @@
-package assignment.basic;
+package assignment.basic.perimeter;
 
 import java.util.Scanner;
 
