@@ -1,6 +1,6 @@
 public class LinearSearch {
     public static void main(String[] args) {
-        int num[] = {23, 45, 1, 2, 8, 19, -3, -4, 16, -11, 28};
+        int[] num = {23, 45, 1, 2, 8, 19, -3, -4, 16, -11, 28};
         int target = 190;
 
         int ans = linearSearch(num, target);
