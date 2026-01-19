@@ -9,8 +9,15 @@ public class Nto1 {
         int number = scanner.nextInt();
 
 //        backWard(number);
-        forward(number);
+//        forward(number);
+        both(number);
+    }
 
+    private static void both(int number) {
+        if (number == 0) return;
+        System.out.println(number);
+        both(number - 1);
+        System.out.println(number);
     }
 
     private static void forward(int number) {
@@ -24,4 +31,6 @@ public class Nto1 {
         System.out.println(number);
         backWard(number - 1);
     }
+
+
 }
